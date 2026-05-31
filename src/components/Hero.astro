@@ -1,29 +1,50 @@
 ---
-
 const heroImages = [
   'https://img.rezio.io/cmib1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/36247cc5-34d3-473f-b354-4d0df3be6eea.png',
   'https://img.rezio.io/cmib1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/c77234d6-d726-49fe-93d3-0c27c6a980d5.png',
 ];
-
-const heroTitle = '';
-const heroSubtitle = '';
 ---
 
 <section class="relative w-full overflow-hidden">
-  <!-- Hero background with gradient overlay -->
-  <div
-    class="w-full h-[46.875vw] min-h-[300px] max-h-[600px] flex items-center justify-center text-center flex-col px-[50px] md:px-[80px] bg-cover bg-center bg-[#f4f4f4]"
-    style={`background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('${heroImages[0]}');`}
-  >
-    {heroTitle && (
-      <h1 class="text-white text-[26px] md:text-[40px] font-bold max-w-[1200px] mb-[10px]" style="text-shadow: black 0.1em 0.1em 0.2em;">
-        {heroTitle}
-      </h1>
-    )}
-    {heroSubtitle && (
-      <p class="text-white text-[18px] md:text-[22px] max-w-[1200px]" style="text-shadow: black 0.1em 0.1em 0.2em;">
-        {heroSubtitle}
-      </p>
-    )}
+  <div class="flex transition-transform duration-500 ease-in-out" id="hero-slider">
+    {heroImages.map((img, i) => (
+      <div
+        class="w-full flex-shrink-0 h-[46.875vw] min-h-[300px] max-h-[600px] flex items-center justify-center text-center flex-col px-[50px] md:px-[80px] bg-cover bg-center bg-[#f4f4f4]"
+        style={`background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('${img}');`}
+      ></div>
+    ))}
+  </div>
+
+  <!-- Dot indicators -->
+  <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-3 z-10">
+    {heroImages.map((_, i) => (
+      <button
+        class="w-3 h-3 rounded-full opacity-60 hover:opacity-100 transition-opacity"
+        style={`background: white; box-shadow: 0 0 4px rgba(0,0,0,0.3); ${i === 0 ? 'opacity: 1;' : ''}`}
+        aria-label={`Slide ${i + 1}`}
+        onclick={`document.getElementById('hero-slider').style.transform = 'translateX(-${i * 100}%)'`}
+      ></button>
+    ))}
   </div>
 </section>
+
+<script>
+  // Auto-slide every 5 seconds
+  let currentSlide = 0;
+  const slider = document.getElementById('hero-slider');
+  const dots = document.querySelectorAll('#hero-slider ~ div button');
+  
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % 2;
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    // Update dots
+    document.querySelectorAll('[class*="rounded-full"][style*="background: white"]').forEach((dot, i) => {
+      if (i === currentSlide) {
+        dot.style.opacity = '1';
+      } else {
+        dot.style.opacity = '0.6';
+      }
+    });
+  }, 5000);
+</script>
