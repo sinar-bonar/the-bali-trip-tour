@@ -15,7 +15,7 @@ export default {
         text: '#1f211d',
       },
       fontFamily: {
-        sans: ['Roboto', 'Noto Sans TC', 'system-ui', 'sans-serif'],
+        sans: ['Ubuntu', 'system-ui', '-apple-system', 'Segoe UI', 'Noto Sans', 'sans-serif'],
       },
     },
   },
