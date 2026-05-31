@@ -21,14 +21,71 @@ const mainImage = tour.gallery?.[0] || tour.image;
   <Header />
 
   <main class="flex-1">
-    <!-- Gallery / Main Image -->
-    <section class="w-full">
-      <img
-        src={mainImage}
-        alt={tour.title}
-        class="w-full h-[300px] md:h-[450px] object-cover"
-      />
+    <!-- Gallery Slider -->
+    <section class="relative w-full overflow-hidden">
+      <div
+        id="gallery-slider"
+        class="flex transition-transform duration-500 ease-in-out"
+        style="touch-action: pan-y;"
+      >
+        {tour.gallery.map((img) => (
+          <div class="w-full flex-shrink-0 h-[300px] md:h-[450px] bg-cover bg-center" style={`background-image: url('${img}')`}></div>
+        ))}
+      </div>
+
+      <!-- Left arrow -->
+      <button id="gal-prev" class="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <!-- Right arrow -->
+      <button id="gal-next" class="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+
+      <!-- Dots -->
+      <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10">
+        {tour.gallery.map((_, i) => (
+          <button class="w-2.5 h-2.5 rounded-full bg-white/70 hover:bg-white transition-opacity" style={i === 0 ? 'opacity: 1;' : 'opacity: 0.5;'} aria-label={`Image ${i + 1}`} onclick={`document.getElementById('gallery-slider').style.transform = 'translateX(-${i * 100}%)'; document.querySelectorAll('#gallery-slider ~ div button').forEach((d,j) => d.style.opacity = j === ${i} ? '1' : '0.5')`}></button>
+        ))}
+      </div>
     </section>
+
+    <script>
+      (function() {
+        const slider = document.getElementById('gallery-slider');
+        if (!slider || slider.children.length <= 1) return;
+        let current = 0;
+        const total = slider.children.length;
+
+        function goTo(i) {
+          current = i;
+          slider.style.transform = `translateX(-${current * 100}%)`;
+          document.querySelectorAll('#gallery-slider ~ * button, #gallery-slider ~ button').forEach(el => {
+            if (el.tagName === 'BUTTON' && el.parentElement?.parentElement === slider.parentElement) {
+              // skip - dots handled by onclick
+            }
+          });
+        }
+
+        document.getElementById('gal-prev')?.addEventListener('click', () => {
+          goTo(current > 0 ? current - 1 : total - 1);
+        });
+        document.getElementById('gal-next')?.addEventListener('click', () => {
+          goTo(current < total - 1 ? current + 1 : 0);
+        });
+
+        // Touch swipe support
+        let startX = 0;
+        slider.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; });
+        slider.addEventListener('touchend', (e) => {
+          const diff = startX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 50) {
+            if (diff > 0) goTo(current < total - 1 ? current + 1 : 0);
+            else goTo(current > 0 ? current - 1 : total - 1);
+          }
+        });
+      })();
+    </script>
 
     <!-- Content -->
     <section class="max-w-[800px] mx-auto px-[15px] md:px-[30px] py-8">
