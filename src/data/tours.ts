@@ -23,7 +23,9 @@ export const tours: Tour[] = [
     image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/abc5a9ec-a1b9-4460-a48e-39d6eb3db36d.jpeg',
     gallery: [
       'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/abc5a9ec-a1b9-4460-a48e-39d6eb3db36d.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/abc5a9ec-a1b9-4460-a48e-39d6eb3db36d.jpeg',
+      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/6044c0b8-58f0-4cb7-88fa-5a8ef3d751ed.jpeg',
+      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/a7d58fdd-0803-4a89-ab89-2545bc5a9c99.jpeg',
+      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/26e94a0f-0239-4ca9-839f-6f5f512eac86.png',
     ],
     description: 'Explore the famous Ubud Monkey Forest and surrounding attractions. This tour takes you through the cultural heart of Bali, visiting markets, palaces, temples, and the iconic monkey sanctuary.',
     highlights: [
