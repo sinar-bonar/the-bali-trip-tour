@@ -20,12 +20,12 @@ export const tours: Tour[] = [
     slug: 'ubud-monkey-forest-tour',
     title: 'Ubud Monkey Forest Tour',
     location: 'Bali, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/abc5a9ec-a1b9-4460-a48e-39d6eb3db36d.jpeg',
+    image: '/images/ubud-monkey-forest-1.jpg',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/abc5a9ec-a1b9-4460-a48e-39d6eb3db36d.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/6044c0b8-58f0-4cb7-88fa-5a8ef3d751ed.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/a7d58fdd-0803-4a89-ab89-2545bc5a9c99.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/26e94a0f-0239-4ca9-839f-6f5f512eac86.png',
+      '/images/ubud-monkey-forest-1.jpg',
+      '/images/ubud-monkey-forest-2.jpg',
+      '/images/ubud-monkey-forest-3.jpg',
+      '/images/ubud-monkey-forest-4.png',
     ],
     description: 'Explore the famous Ubud Monkey Forest and surrounding attractions. This tour takes you through the cultural heart of Bali, visiting markets, palaces, temples, and the iconic monkey sanctuary.',
     highlights: [
@@ -62,10 +62,10 @@ export const tours: Tour[] = [
     slug: 'private-beautiful-beach-tour',
     title: 'PRIVATE DAY TOUR - Beautiful Beach Tour',
     location: 'Bali, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/36bce347-6bec-4802-8c02-a5e698c6c1ba.jpeg',
+    image: '/images/beautiful-beach.jpg',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/36bce347-6bec-4802-8c02-a5e698c6c1ba.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/36bce347-6bec-4802-8c02-a5e698c6c1ba.jpeg',
+      '/images/beautiful-beach.jpg',
+      '/images/beautiful-beach.jpg',
     ],
     description: 'Discover Bali\'s most beautiful beaches on this private day tour. From golden sands to dramatic cliffside coves, visit Uluwatu Temple, Padang Padang Beach, and more stunning coastal destinations.',
     highlights: [
@@ -98,10 +98,10 @@ export const tours: Tour[] = [
     slug: 'private-bedugul-waterfall-tour',
     title: 'PRIVATE DAY TOUR - Bedugul Waterfall Tour',
     location: 'Bedugul, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/d3bb0fea-830c-449f-81d7-7ce702a14001.png',
+    image: '/images/bedugul-waterfall.png',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/d3bb0fea-830c-449f-81d7-7ce702a14001.png',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/d3bb0fea-830c-449f-81d7-7ce702a14001.png',
+      '/images/bedugul-waterfall.png',
+      '/images/bedugul-waterfall.png',
     ],
     description: 'Escape to the cool highlands of Bedugul and discover breathtaking waterfalls hidden in the jungle. Visit Banyumala Waterfall, Wanagiri Hidden Hill, and the majestic Gitgit Waterfall.',
     highlights: [
@@ -134,10 +134,10 @@ export const tours: Tour[] = [
     slug: 'private-kintamani-full-day-tour',
     title: 'PRIVATE DAY TOUR - Kintamani Full Day Tour',
     location: 'Kintamani, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/10d3bfeb-d5a0-4130-8a30-be7496e01e54.png',
+    image: '/images/kintamani.png',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/10d3bfeb-d5a0-4130-8a30-be7496e01e54.png',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/10d3bfeb-d5a0-4130-8a30-be7496e01e54.png',
+      '/images/kintamani.png',
+      '/images/kintamani.png',
     ],
     description: 'Experience the majestic beauty of Mount Batur, visit traditional villages, coffee plantations, and enjoy panoramic views of Bali\'s most iconic volcano on this full day tour.',
     highlights: [
@@ -170,10 +170,10 @@ export const tours: Tour[] = [
     slug: 'private-nusa-penida-tour',
     title: 'PRIVATE DAY TOUR - Nusa Penida Tour',
     location: 'Bali, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/5fb274fc-c519-4ecd-8590-6e2fe8228c0f.png',
+    image: '/images/nusa-penida.png',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/5fb274fc-c519-4ecd-8590-6e2fe8228c0f.png',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/5fb274fc-c519-4ecd-8590-6e2fe8228c0f.png',
+      '/images/nusa-penida.png',
+      '/images/nusa-penida.png',
     ],
     description: 'Take a speedboat to the stunning island of Nusa Penida. Explore dramatic cliff formations at Kelingking Beach, swim at Crystal Bay, and visit Angel\'s Billabong and Broken Beach.',
     highlights: [
@@ -206,10 +206,10 @@ export const tours: Tour[] = [
     slug: 'ubud-rice-terrace-tour',
     title: 'Ubud Rice Terrace Tour',
     location: 'Bali, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/304ddefd-4469-49ad-a8f1-187433028afc.jpeg',
+    image: '/images/rice-terrace.jpg',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/304ddefd-4469-49ad-a8f1-187433028afc.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/304ddefd-4469-49ad-a8f1-187433028afc.jpeg',
+      '/images/rice-terrace.jpg',
+      '/images/rice-terrace.jpg',
     ],
     description: 'Discover the iconic Tegallalang Rice Terraces, swing above the jungle at Alas Harum, visit Tegenungan Waterfall, and explore a coffee plantation on this unforgettable tour.',
     highlights: [
@@ -242,10 +242,10 @@ export const tours: Tour[] = [
     slug: 'water-sport-beach-tour',
     title: 'Water Sport Beach Tour',
     location: 'Bali, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/226283f7-adbe-4887-9426-3857be109419.jpeg',
+    image: '/images/water-sport.jpg',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/226283f7-adbe-4887-9426-3857be109419.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/226283f7-adbe-4887-9426-3857be109419.jpeg',
+      '/images/water-sport.jpg',
+      '/images/water-sport.jpg',
     ],
     description: 'Get your adrenaline pumping with Bali\'s best water sports at Tanjung Benoa. From jet skiing and parasailing to banana boats and snorkeling, plus visits to Nusa Dua Water Blow and Kuta Beach.',
     highlights: [
@@ -274,10 +274,10 @@ export const tours: Tour[] = [
     slug: 'lempuyang-east-bali-tour',
     title: 'Lempuyang East Bali Tour',
     location: 'Bali, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/973b1687-15c5-4edf-9a14-dd1576014a32.jpeg',
+    image: '/images/lempuyang.jpg',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/973b1687-15c5-4edf-9a14-dd1576014a32.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/973b1687-15c5-4edf-9a14-dd1576014a32.jpeg',
+      '/images/lempuyang.jpg',
+      '/images/lempuyang.jpg',
     ],
     description: 'Visit the iconic Gates of Heaven at Lempuyang Temple, explore Tirta Gangga Water Palace, and discover the sacred Goa Lawah Bat Cave Temple on this East Bali cultural tour.',
     highlights: [
@@ -310,10 +310,10 @@ export const tours: Tour[] = [
     slug: 'bedugul-tanah-lot-tour',
     title: 'Bedugul Tanah Lot Tour',
     location: 'Bali, Indonesia',
-    image: 'https://img.rezio.io/mip1/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/eeae50a1-2fa9-4492-b6f7-e0f7cae84fc5.jpeg',
+    image: '/images/bedugul-tanah-lot.jpg',
     gallery: [
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/eeae50a1-2fa9-4492-b6f7-e0f7cae84fc5.jpeg',
-      'https://img.rezio.io/size/6d7e09fb-b34d-48be-88f1-37dd5ba447bc/eeae50a1-2fa9-4492-b6f7-e0f7cae84fc5.jpeg',
+      '/images/bedugul-tanah-lot.jpg',
+      '/images/bedugul-tanah-lot.jpg',
     ],
     description: 'Combine the cool highlands of Bedugul with the stunning sea temple of Tanah Lot. Visit the beautiful Ulun Danu Beratan Temple and end the day watching the sunset at the iconic Tanah Lot Temple.',
     highlights: [
@@ -339,3 +339,4 @@ export const tours: Tour[] = [
     ],
   },
 ];
+
