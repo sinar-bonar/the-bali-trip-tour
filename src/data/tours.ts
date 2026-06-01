@@ -9,7 +9,7 @@ export interface Tour {
   title: string;
   location: string;
   image: string;
-  gallery: string[];
+  gallery?: string[];
   description: string;
   highlights: string[];
   destinations: TourDestination[];
@@ -21,12 +21,6 @@ export const tours: Tour[] = [
     title: 'Ubud Monkey Forest Tour',
     location: 'Bali, Indonesia',
     image: '/images/ubud-monkey-forest-tour/ubud-monkey-forest-1.jpg',
-    gallery: [
-      '/images/ubud-monkey-forest-tour/ubud-monkey-forest-1.jpg',
-      '/images/ubud-monkey-forest-tour/ubud-monkey-forest-2.jpg',
-      '/images/ubud-monkey-forest-tour/ubud-monkey-forest-3.jpg',
-      '/images/ubud-monkey-forest-tour/ubud-monkey-forest-4.png',
-    ],
     description: 'Explore the famous Ubud Monkey Forest and surrounding attractions. This tour takes you through the cultural heart of Bali, visiting markets, palaces, temples, and the iconic monkey sanctuary.',
     highlights: [
       'Visit the sacred Monkey Forest sanctuary',
@@ -46,7 +40,6 @@ export const tours: Tour[] = [
   {
     slug: 'private-beautiful-beach-tour', title: 'PRIVATE DAY TOUR - Beautiful Beach Tour', location: 'Bali, Indonesia',
     image: '/images/beautiful-beach-tour/beautiful-beach.jpg',
-    gallery: ['/images/beautiful-beach-tour/beautiful-beach-1.jpg', '/images/beautiful-beach-tour/beautiful-beach-2.jpg', '/images/beautiful-beach-tour/beautiful-beach-3.jpg', '/images/beautiful-beach-tour/beautiful-beach-4.jpg'],
     description: 'Discover Bali\'s most beautiful beaches on this private day tour. From golden sands to dramatic cliffside coves, visit Uluwatu Temple, Padang Padang Beach, and more stunning coastal destinations.',
     highlights: ['Visit Uluwatu Temple on dramatic cliffs', 'Relax at Padang Padang Beach (Eat Pray Love fame)', 'Explore Suluban Beach hidden caves', 'Sunset at Dreamland Beach', 'Private tour with flexible itinerary'],
     destinations: [
@@ -59,7 +52,6 @@ export const tours: Tour[] = [
   {
     slug: 'private-bedugul-waterfall-tour', title: 'PRIVATE DAY TOUR - Bedugul Waterfall Tour', location: 'Bedugul, Indonesia',
     image: '/images/bedugul-waterfall-tour/bedugul-waterfall.png',
-    gallery: ['/images/bedugul-waterfall-tour/bedugul-waterfall-1.jpg', '/images/bedugul-waterfall-tour/bedugul-waterfall-2.jpg', '/images/bedugul-waterfall-tour/bedugul-waterfall-3.jpeg', '/images/bedugul-waterfall-tour/bedugul-waterfall-4.jpeg'],
     description: 'Escape to the cool highlands of Bedugul and discover breathtaking waterfalls hidden in the jungle. Visit Banyumala Waterfall, Wanagiri Hidden Hill, and the majestic Gitgit Waterfall.',
     highlights: ['Visit Banyumala Waterfall twin cascades', 'Panoramic views at Wanagiri Hidden Hill', 'See the Twin Lakes (Buyan & Tamblingan)', 'Experience 35m Gitgit Waterfall', 'Private guide and transportation'],
     destinations: [
@@ -72,7 +64,6 @@ export const tours: Tour[] = [
   {
     slug: 'private-kintamani-full-day-tour', title: 'PRIVATE DAY TOUR - Kintamani Full Day Tour', location: 'Kintamani, Indonesia',
     image: '/images/kintamani-tour/kintamani.png',
-    gallery: ['/images/kintamani-tour/kintamani-1.jpg', '/images/kintamani-tour/kintamani-2.jpg', '/images/kintamani-tour/kintamani-3.jpg', '/images/kintamani-tour/kintamani-4.jpg'],
     description: 'Experience the majestic beauty of Mount Batur, visit traditional villages, coffee plantations, and enjoy panoramic views of Bali\'s most iconic volcano on this full day tour.',
     highlights: ['Panoramic views of Mount Batur', 'Visit Lake Batur', 'Explore Tegenungan Waterfall', 'Coffee plantation with Luwak tasting', 'Full day private tour experience'],
     destinations: [
@@ -85,7 +76,6 @@ export const tours: Tour[] = [
   {
     slug: 'private-nusa-penida-tour', title: 'PRIVATE DAY TOUR - Nusa Penida Tour', location: 'Bali, Indonesia',
     image: '/images/nusa-penida-tour/nusa-penida.png',
-    gallery: ['/images/nusa-penida-tour/nusa-penida-1.png', '/images/nusa-penida-tour/nusa-penida-2.png', '/images/nusa-penida-tour/nusa-penida-3.png'],
     description: 'Take a speedboat to the stunning island of Nusa Penida. Explore dramatic cliff formations at Kelingking Beach, swim at Crystal Bay, and visit Angel\'s Billabong and Broken Beach.',
     highlights: ['Speedboat transfer to Nusa Penida', 'Visit Kelingking Beach (T-Rex cliff)', 'Swim at Angel\'s Billabong infinity pool', 'See Broken Beach natural arch', 'Snorkeling at Crystal Bay'],
     destinations: [
@@ -98,7 +88,6 @@ export const tours: Tour[] = [
   {
     slug: 'ubud-rice-terrace-tour', title: 'Ubud Rice Terrace Tour', location: 'Bali, Indonesia',
     image: '/images/ubud-rice-terrace-tour/rice-terrace.jpg',
-    gallery: ['/images/ubud-rice-terrace-tour/rice-terrace-1.jpg', '/images/ubud-rice-terrace-tour/rice-terrace-2.jpg', '/images/ubud-rice-terrace-tour/rice-terrace-3.jpg', '/images/ubud-rice-terrace-tour/rice-terrace-4.jpg'],
     description: 'Discover the iconic Tegallalang Rice Terraces, swing above the jungle at Alas Harum, visit Tegenungan Waterfall, and explore a coffee plantation on this unforgettable tour.',
     highlights: ['Visit Tegallalang Rice Terraces', 'Bali Swing experience at Alas Harum', 'Swim at Tegenungan Waterfall', 'Coffee plantation with Luwak tasting', 'Cultural insights with local guide'],
     destinations: [
@@ -111,7 +100,6 @@ export const tours: Tour[] = [
   {
     slug: 'water-sport-beach-tour', title: 'Water Sport Beach Tour', location: 'Bali, Indonesia',
     image: '/images/water-sport-tour/water-sport.jpg',
-    gallery: ['/images/water-sport-tour/water-sport-1.jpg', '/images/water-sport-tour/water-sport-2.jpg', '/images/water-sport-tour/water-sport-3.jpeg'],
     description: 'Get your adrenaline pumping with Bali\'s best water sports at Tanjung Benoa. From jet skiing and parasailing to banana boats and snorkeling, plus visits to Nusa Dua Water Blow and Kuta Beach.',
     highlights: ['Jet skiing and parasailing at Tanjung Benoa', 'Banana boat rides', 'Nusa Dua Water Blow natural attraction', 'Relax at Kuta Beach sunset', 'All safety equipment included'],
     destinations: [
@@ -123,7 +111,6 @@ export const tours: Tour[] = [
   {
     slug: 'lempuyang-east-bali-tour', title: 'Lempuyang East Bali Tour', location: 'Bali, Indonesia',
     image: '/images/lempuyang-tour/lempuyang.jpg',
-    gallery: ['/images/lempuyang-tour/lempuyang-1.jpg', '/images/lempuyang-tour/lempuyang-2.jpg', '/images/lempuyang-tour/lempuyang-3.jpg', '/images/lempuyang-tour/lempuyang-4.jpg', '/images/lempuyang-tour/lempuyang-5.jpg'],
     description: 'Visit the iconic Gates of Heaven at Lempuyang Temple, explore Tirta Gangga Water Palace, and discover the sacred Goa Lawah Bat Cave Temple on this East Bali cultural tour.',
     highlights: ['Photo at Lempuyang Temple Gate of Heaven', 'Explore Tirta Gangga Water Palace', 'Visit Goa Lawah Bat Cave Temple', 'Mount Agung backdrop at every stop', 'Cultural and spiritual experience'],
     destinations: [
@@ -138,7 +125,6 @@ export const tours: Tour[] = [
     title: 'Bedugul Tanah Lot Tour',
     location: 'Bali, Indonesia',
     image: '/images/bedugul-tanah-lot-tour/bedugul-tanah-lot.jpg',
-    gallery: ['/images/bedugul-tanah-lot-tour/bedugul-tanah-lot-1.jpg', '/images/bedugul-tanah-lot-tour/bedugul-tanah-lot-2.jpg', '/images/bedugul-tanah-lot-tour/bedugul-tanah-lot-3.jpg', '/images/bedugul-tanah-lot-tour/bedugul-tanah-lot-4.jpg'],
     description: 'The Bedugul Tanah Lot Tour is a popular full-day excursion in Bali, offering a blend of scenic beauty, culture, and spirituality. Visit mountain temples, iconic gates, and a stunning sea temple in one unforgettable journey.',
     highlights: [
       'Visit Ulun Danu Beratan floating temple on Lake Beratan',

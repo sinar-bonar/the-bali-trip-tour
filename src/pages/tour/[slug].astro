@@ -4,6 +4,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import { tours } from '../../data/tours';
+import { getGalleryImages } from '../../data/images';
 
 export function getStaticPaths() {
   return tours.map((tour) => ({
@@ -14,7 +15,8 @@ export function getStaticPaths() {
 
 const { tour } = Astro.props;
 const waUrl = `https://wa.me/628179780980?text=Hi%20Bali%20Grand%20Tour%2C%20I%27m%20interested%20in%20${encodeURIComponent(tour.title)}`;
-const mainImage = tour.gallery?.[0] || tour.image;
+const galleryImages = tour.gallery ?? getGalleryImages(tour.slug, tour.image);
+const mainImage = galleryImages?.[0] || tour.image;
 ---
 
 <Layout>
@@ -28,7 +30,7 @@ const mainImage = tour.gallery?.[0] || tour.image;
         class="flex transition-transform duration-500 ease-in-out"
         style="touch-action: pan-y;"
       >
-        {tour.gallery.map((img) => {
+        {galleryImages.map((img) => {
           const imgUrl = img.startsWith('/') ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${img}` : img;
           return <div class="w-full flex-shrink-0 h-[300px] md:h-[450px] bg-cover bg-center" style={`background-image: url('${imgUrl}')`}></div>;
         })}
@@ -45,7 +47,7 @@ const mainImage = tour.gallery?.[0] || tour.image;
 
       <!-- Dots -->
       <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10">
-        {tour.gallery.map((_, i) => (
+        {galleryImages.map((_, i) => (
           <button class="w-2.5 h-2.5 rounded-full bg-white/70 hover:bg-white transition-opacity" style={i === 0 ? 'opacity: 1;' : 'opacity: 0.5;'} aria-label={`Image ${i + 1}`} onclick={`document.getElementById('gallery-slider').style.transform = 'translateX(-${i * 100}%)'; document.querySelectorAll('#gallery-slider ~ div button').forEach((d,j) => d.style.opacity = j === ${i} ? '1' : '0.5')`}></button>
         ))}
       </div>
