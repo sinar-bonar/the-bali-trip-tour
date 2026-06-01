@@ -1,9 +1,9 @@
-# 🌴 The Bali Trip Tour
+# 🌴 Bali Grand Tour
 
-Website statis untuk **The Bali Trip Tour** — tour operator di Bali.
+Website statis untuk **Bali Grand Tour** — tour operator di Bali.
 
-🌐 **Live**: https://sinar-bonar.github.io/the-bali-trip-tour/  
-📦 **Repo**: https://github.com/sinar-bonar/the-bali-trip-tour
+🌐 **Live**: https://baligrandtour.com  
+📦 **Repo**: https://github.com/sinar-bonar/bali-grand-tour
 
 ## 🛠 Tech Stack
 
@@ -14,7 +14,7 @@ Website statis untuk **The Bali Trip Tour** — tour operator di Bali.
 ## 📁 Struktur Project
 
 ```
-📁 WebPages/TheBaliTripTour/
+📁 WebPages/BaliGrandTour/
 ├── src/
 │   ├── components/
 │   │   ├── Header.astro       # Navbar + logo
@@ -43,7 +43,7 @@ Website statis untuk **The Bali Trip Tour** — tour operator di Bali.
 ## 🚀 Cara Develop
 
 ```bash
-cd D:\GitHub\WebPages\TheBaliTripTour
+cd D:\GitHub\WebPages\BaliGrandTour
 npm run dev      # Preview lokal (http://localhost:4321)
 npm run build    # Build ke folder docs/
 npm run preview  # Preview hasil build
@@ -84,7 +84,7 @@ Array `tours` berisi data semua tour. Struktur per tour:
 ### 4. Informasi kontak — di `Footer.astro`
 - Email: `pdewa5437@gmail.com`
 - Telp: `+62 817 9780 980`
-- Facebook: `facebook.com/thebalitrip`
+- Facebook: `facebook.com/thebaligrandtour`
 
 ## 📋 Daftar Tour (9)
 
