@@ -59,7 +59,7 @@ export const tours: Tour[] = [
   {
     slug: 'private-bedugul-waterfall-tour', title: 'PRIVATE DAY TOUR - Bedugul Waterfall Tour', location: 'Bedugul, Indonesia',
     image: '/images/bedugul-waterfall-tour/bedugul-waterfall.png',
-    gallery: ['/images/bedugul-waterfall-tour/bedugul-waterfall-1.jpg', '/images/bedugul-waterfall-tour/bedugul-waterfall-2.jpg', '/images/bedugul-waterfall-tour/bedugul-waterfall-3.jpg', '/images/bedugul-waterfall-tour/bedugul-waterfall-4.jpg'],
+    gallery: ['/images/bedugul-waterfall-tour/bedugul-waterfall-1.jpg', '/images/bedugul-waterfall-tour/bedugul-waterfall-2.jpg', '/images/bedugul-waterfall-tour/bedugul-waterfall-3.jpeg', '/images/bedugul-waterfall-tour/bedugul-waterfall-4.jpeg'],
     description: 'Escape to the cool highlands of Bedugul and discover breathtaking waterfalls hidden in the jungle. Visit Banyumala Waterfall, Wanagiri Hidden Hill, and the majestic Gitgit Waterfall.',
     highlights: ['Visit Banyumala Waterfall twin cascades', 'Panoramic views at Wanagiri Hidden Hill', 'See the Twin Lakes (Buyan & Tamblingan)', 'Experience 35m Gitgit Waterfall', 'Private guide and transportation'],
     destinations: [
@@ -111,7 +111,7 @@ export const tours: Tour[] = [
   {
     slug: 'water-sport-beach-tour', title: 'Water Sport Beach Tour', location: 'Bali, Indonesia',
     image: '/images/water-sport-tour/water-sport.jpg',
-    gallery: ['/images/water-sport-tour/water-sport-1.jpg', '/images/water-sport-tour/water-sport-2.jpg'],
+    gallery: ['/images/water-sport-tour/water-sport-1.jpg', '/images/water-sport-tour/water-sport-2.jpg', '/images/water-sport-tour/water-sport-3.jpeg'],
     description: 'Get your adrenaline pumping with Bali\'s best water sports at Tanjung Benoa. From jet skiing and parasailing to banana boats and snorkeling, plus visits to Nusa Dua Water Blow and Kuta Beach.',
     highlights: ['Jet skiing and parasailing at Tanjung Benoa', 'Banana boat rides', 'Nusa Dua Water Blow natural attraction', 'Relax at Kuta Beach sunset', 'All safety equipment included'],
     destinations: [
